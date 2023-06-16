@@ -5,6 +5,7 @@ import { SVGProps } from "react";
 import Features from "@/components/Features";
 import Recruitment from "@/components/Recruitment";
 import Reviews from "@/components/Reviews";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function Home() {
         <Features />
         <Recruitment />
         <Reviews />
+        <Contact />
       </main>
     </>
   );
