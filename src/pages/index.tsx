@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import { SVGProps } from "react";
 import Features from "@/components/Features";
 import Recruitment from "@/components/Recruitment";
+import Reviews from "@/components/Reviews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function Home() {
         />
         <Features />
         <Recruitment />
+        <Reviews />
       </main>
     </>
   );
