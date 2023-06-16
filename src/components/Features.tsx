@@ -4,12 +4,13 @@ import { BsGoogle } from "react-icons/bs";
 import { FaYahoo } from "react-icons/fa";
 import { SiGodaddy, SiLenovo } from "react-icons/si";
 import Image from "next/image";
+import Accordian from "./UI/Accordian";
 
 type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <div className="bg-white max-w-[1800px] flex flex-col items-center justify-around mt-36">
+    <div className="bg-white max-w-[1800px]  flex flex-col items-center justify-around mt-36">
       <h1 className="font-lato font-bold text-xl">
         Trusted by Local and International Businesses
       </h1>
@@ -21,9 +22,9 @@ const Features = (props: Props) => {
         <SiLenovo className="text-9xl" />
       </div>
 
-      <div className="flex items-center space-x-4 mt-36">
+      <div className="flex items-center mt-36 ">
         <div className="flex flex-col max-w-2xl">
-          <h1 className="font-lato font-bold text-7xl">
+          <h1 className="font-lato font-bold text-[64px]">
             Who we are and what we do
           </h1>
           <p className="text-gray-500 text-2xl pt-6 font-lato font-regular">
@@ -40,9 +41,9 @@ const Features = (props: Props) => {
         <div>
           <Image
             src="/assets/headhunter.jpg"
-            height={650}
-            width={650}
-            className="object-contain"
+            height={700}
+            width={800}
+            className="object-contain ml-10"
             alt={""}
           />
         </div>

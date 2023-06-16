@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { SVGProps } from "react";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
-import { Button, createTheme, Box } from "@mui/material";
+import { Button, createTheme, ThemeProvider, Box } from "@mui/material";
 
 interface NavProps {
   text: string;
@@ -14,14 +14,14 @@ const Nav: React.FC<NavProps> = () => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#fff",
-        contrastText: "#144aa1;",
+        main: "#144aa1",
+        contrastText: "#fff",
       },
     },
   });
   return (
     <header className="bg-[#144aa1]">
-      <div className="px-12 py-12">
+      <div className="px-24 py-12 max-w-[1800px]">
         <div className="flex items-start text-white">
           <div className="flex items-center font-lato font-extraBold text-2xl space-x-2">
             <Diversity3Icon
@@ -43,9 +43,11 @@ const Nav: React.FC<NavProps> = () => {
               <a>Press</a>
               <a>Contact</a>
             </li>
-            <Button theme={theme} variant="contained">
-              <span className="font-lato font-bold">Consultation</span>
-            </Button>
+            <ThemeProvider theme={theme}>
+              <Button size="large" variant="contained" color="primary">
+                <span className="font-lato font-extraBold">Consultation</span>
+              </Button>
+            </ThemeProvider>
           </div>
         </div>
 
@@ -59,11 +61,13 @@ const Nav: React.FC<NavProps> = () => {
               and with full transparency.
             </p>
             <Box sx={{ "& button": { marginTop: 5 } }}>
-              <Button size="large" theme={theme} variant="contained">
-                <span className="font-lato font-extraBold">
-                  Contact Us and Start Recruitment
-                </span>
-              </Button>
+              <ThemeProvider theme={theme}>
+                <Button size="large" variant="contained">
+                  <span className="font-lato font-extraBold">
+                    Contact Us and Start Recruitment
+                  </span>
+                </Button>
+              </ThemeProvider>
             </Box>
           </div>
           <div className="w-[100%] h-[100%] px-10">
