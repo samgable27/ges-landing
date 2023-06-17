@@ -81,7 +81,7 @@ const Nav: React.FC<NavProps> = () => {
           </div>
         </div>
       </div>
-      <div className="waves-bg bg-no-repeat bg-cover bg-center h-[300px] object-cover"></div>
+      <div className="waves-bg bg-no-repeat bg-cover bg-center h-[300px] rounded-b-lg object-cover"></div>
     </header>
   );
 };
