@@ -5,8 +5,8 @@ type Props = {};
 
 const Recruitment = (props: Props) => {
   return (
-    <div className="mt-36 ml-36 ">
-      <div className="max-w-3xl mb-12">
+    <div className="mt-36 ml-36">
+      <div className="max-w-3xl text-left mb-12">
         <h1 className="font-lato font-bold text-[64px]">
           What you can expect from our recruitment process
         </h1>

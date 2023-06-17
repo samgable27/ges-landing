@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import Box from "@mui/material/Box";
 import { TextField, createTheme, Theme } from "@mui/material";
 import { ThemeProvider, useTheme } from "@emotion/react";
 import { outlinedInputClasses } from "@mui/material/OutlinedInput";
-import { Button } from "antd";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Button, Space } from "antd";
 
 type Props = {};
 
@@ -92,6 +93,24 @@ const Contact = (props: Props) => {
   const ariaLabel = { "aria-label": "description" };
   const outerTheme = useTheme();
 
+  const [loadings, setLoadings] = useState<boolean[]>([]);
+
+  const enterLoading = (index: number) => {
+    setLoadings((prevLoadings) => {
+      const newLoadings = [...prevLoadings];
+      newLoadings[index] = true;
+      return newLoadings;
+    });
+
+    setTimeout(() => {
+      setLoadings((prevLoadings) => {
+        const newLoadings = [...prevLoadings];
+        newLoadings[index] = false;
+        return newLoadings;
+      });
+    }, 6000);
+  };
+
   return (
     <div className="flex items-start justify-between bg-[#144aa1] px-36 py-36">
       <div className=" flex flex-col">
@@ -135,7 +154,17 @@ const Contact = (props: Props) => {
           <TextField label="Email" variant="filled" />
           <TextField label="Subject" variant="filled" />
           <TextField label="Message" variant="filled" multiline rows={6} />
-          <button className="bg-[#32a852] rounded-lg w-20 h-10">Send</button>
+          <Space wrap>
+            <Button
+              className="bg-[#15ba99] w-[25rem] h-[3rem]"
+              type="primary"
+              loading={loadings[0]}
+              onClick={() => enterLoading(0)}
+            >
+              <span className="font-lato font-regular text-lg">Send</span>
+              <ArrowForwardIcon className="text-[20px] mb-1 ml-1" />
+            </Button>
+          </Space>
         </Box>
       </ThemeProvider>
     </div>
