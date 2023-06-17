@@ -122,12 +122,16 @@ const Contact = (props: Props) => {
           hours
         </div>
         <p className="font-lato font-light text-gray-300 max-w-xl pt-10">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          dolores, deleniti recusandae velit consequuntur ipsa vel. Voluptatem,
-          deserunt dolore! Dolorem cupiditate nam optio tempora eos. Atque
-          veritatis officiis voluptatem fugiat! Vel repudiandae libero, eaque
-          praesentium veritatis minus iure, quam voluptatum numquam voluptate
-          nulla possimus vero laudantium laborum accusantium, nihil dicta?
+          Unlock your potential with our executive services, the leading
+          headhunting firm dedicated to connecting you with opportunities that
+          propel you towards unparalleled success. We employ a uniquely tailored
+          approach to discover the hidden gems in the employment market,
+          perfectly suited to your skillset and ambitions. Our extensive network
+          and deep industry insights ensure we don't just find you a job - we
+          find you the right fit, in an organization where you can grow, excel,
+          and make a meaningful impact. Let GES be your compass in navigating
+          the world of opportunities, and take the first step to a rewarding and
+          fulfilling career journey
         </p>
         <div className="flex font-lato font-regular text-gray-300 space-x-24 pt-10 ml-7 text-2xl">
           <div className="flex items-center space-x-3">
