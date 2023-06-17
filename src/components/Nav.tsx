@@ -20,9 +20,9 @@ const Nav: React.FC<NavProps> = () => {
     },
   });
   return (
-    <header className="bg-[#144aa1]">
-      <div className="px-24 py-12 max-w-[1800px]">
-        <div className="flex items-start text-white">
+    <header className="bg-[#144aa1] rounded-b-[20rem]">
+      <div className="px-24 py-12 ">
+        <div className="flex items-center justify-between text-white max-w-[1800px]">
           <div className="flex items-center font-lato font-extraBold text-2xl space-x-2">
             <Diversity3Icon
               sx={{
@@ -53,8 +53,8 @@ const Nav: React.FC<NavProps> = () => {
 
         <div className="flex mt-36">
           <div className="flex flex-col max-w-2xl">
-            <h1 className="text-white font-lato font-bold text-[64px]">
-              We will handle the recruitment process for you.
+            <h1 className="text-white font-lato pb-3 font-bold text-[64px]">
+              We will handle the recruitment process for you
             </h1>
             <p className="text-gray-300 text-2xl font-lato font-regular ">
               All the while ensuring the hiring process is simple, efficient,
@@ -81,6 +81,7 @@ const Nav: React.FC<NavProps> = () => {
           </div>
         </div>
       </div>
+      <div className="waves-bg bg-no-repeat bg-cover bg-center h-[300px] object-cover"></div>
     </header>
   );
 };

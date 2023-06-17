@@ -12,6 +12,10 @@ module.exports = {
         bold: 700,
         extraBold: 900,
       },
+      backgroundImage: {
+        "wave-1": "url('/images/wave1.png')",
+        "wave-2": "url('/images/wave2.png')",
+      },
     },
   },
   plugins: [],

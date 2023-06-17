@@ -112,65 +112,67 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <div className="flex items-start justify-between bg-[#144aa1] px-36 py-36">
-      <div className=" flex flex-col">
-        <h1 className="font-lato font-bold text-2xl text-[#fff] max-w-[1800px]">
-          Contact Us
-        </h1>
-        <div className="mt-8 ml-1 font-lato font-extraBold text-5xl max-w-lg text-white leading-tight">
-          Any questions? Write or call with a guaranteed response within 12
-          hours
-        </div>
-        <p className="font-lato font-light text-gray-300 max-w-xl pt-10">
-          Unlock your potential with our executive services, the leading
-          headhunting firm dedicated to connecting you with opportunities that
-          propel you towards unparalleled success. We employ a uniquely tailored
-          approach to discover the hidden gems in the employment market,
-          perfectly suited to your skillset and ambitions. Our extensive network
-          and deep industry insights ensure we don't just find you a job - we
-          find you the right fit, in an organization where you can grow, excel,
-          and make a meaningful impact. Let GES be your compass in navigating
-          the world of opportunities, and take the first step to a rewarding and
-          fulfilling career journey
-        </p>
-        <div className="flex font-lato font-regular text-gray-300 space-x-24 pt-10 ml-7 text-2xl">
-          <div className="flex items-center space-x-3">
-            <LocalPhoneIcon />
-            <span>+ 1 342 332 338</span>
+    <div className=" bg-[#144aa1] rounded-t-[15rem] px-36 py-36">
+      <div className="flex items-start justify-between max-w-[1600px]">
+        <div className=" flex flex-col">
+          <h1 className="font-lato font-bold text-2xl text-[#fff] max-w-[2000px]">
+            Contact Us
+          </h1>
+          <div className="mt-8 ml-1 font-lato font-extraBold text-5xl max-w-lg text-white leading-tight">
+            Any questions? Write or call with a guaranteed response within 12
+            hours
           </div>
-          <div className="flex items-center space-x-3">
-            <EmailOutlinedIcon />
-            <span>info@ges.com</span>
+          <p className="font-lato font-light text-gray-300 max-w-xl pt-10">
+            Unlock your potential with our executive services, the leading
+            headhunting firm dedicated to connecting you with opportunities that
+            propel you towards unparalleled success. We employ a uniquely
+            tailored approach to discover the hidden gems in the employment
+            market, perfectly suited to your skillset and ambitions. Our
+            extensive network and deep industry insights ensure we don't just
+            find you a job - we find you the right fit, in an organization where
+            you can grow, excel, and make a meaningful impact. Let GES be your
+            compass in navigating the world of opportunities, and take the first
+            step to a rewarding and fulfilling career journey
+          </p>
+          <div className="flex font-lato font-regular text-gray-300 space-x-24 pt-10 ml-7 text-2xl">
+            <div className="flex items-center space-x-3">
+              <LocalPhoneIcon />
+              <span>+ 1 342 332 338</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <EmailOutlinedIcon />
+              <span>info@ges.com</span>
+            </div>
           </div>
         </div>
+        <ThemeProvider theme={customTheme(outerTheme)}>
+          <Box
+            className="mr-64 flex flex-col space-y-12 w-max"
+            component="form"
+            sx={{
+              "& > :not(style)": { m: 1, width: "25rem" },
+            }}
+            noValidate
+            autoComplete="off"
+          >
+            <TextField label="Your Name" variant="filled" />
+            <TextField label="Email" variant="filled" />
+            <TextField label="Subject" variant="filled" />
+            <TextField label="Message" variant="filled" multiline rows={6} />
+            <Space wrap>
+              <Button
+                className="bg-[#15ba99] w-[25rem] h-[3rem]"
+                type="primary"
+                loading={loadings[0]}
+                onClick={() => enterLoading(0)}
+              >
+                <span className="font-lato font-regular text-lg">Send</span>
+                <ArrowForwardIcon className="text-[20px] mb-1 ml-1" />
+              </Button>
+            </Space>
+          </Box>
+        </ThemeProvider>
       </div>
-      <ThemeProvider theme={customTheme(outerTheme)}>
-        <Box
-          className="mr-64 flex flex-col space-y-12 w-max"
-          component="form"
-          sx={{
-            "& > :not(style)": { m: 1, width: "25rem" },
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <TextField label="Your Name" variant="filled" />
-          <TextField label="Email" variant="filled" />
-          <TextField label="Subject" variant="filled" />
-          <TextField label="Message" variant="filled" multiline rows={6} />
-          <Space wrap>
-            <Button
-              className="bg-[#15ba99] w-[25rem] h-[3rem]"
-              type="primary"
-              loading={loadings[0]}
-              onClick={() => enterLoading(0)}
-            >
-              <span className="font-lato font-regular text-lg">Send</span>
-              <ArrowForwardIcon className="text-[20px] mb-1 ml-1" />
-            </Button>
-          </Space>
-        </Box>
-      </ThemeProvider>
     </div>
   );
 };

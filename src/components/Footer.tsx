@@ -10,22 +10,20 @@ const Footer = (props: Props) => {
     <div className="ml-36 mt-12 flex flex-col">
       <div className="flex items-center justify-between space-y-5 mr-96 border-spacing-2 border-gray-100 border-b-2 pb-10 ">
         <div className="flex flex-col items-start font-lato font-extraBold text-2xl space-x-2">
-          <div className="flex items-center justify-between space-x-1">
+          <div className="flex items-start space-x-1">
             <Diversity3Icon
               sx={{
                 fontSize: "2rem",
               }}
             />
-            <div>
-              Gable
-              <span className="font-lato font-regular">ExecutiveSearch</span>
-            </div>
+            Gable
+            <span className="font-lato font-regular">ExecutiveSearch</span>
           </div>
-          <p className="font-lato font-regular text-sm max-w-sm pt-3">
+          <span className="font-lato font-regular text-sm max-w-sm pt-3 pr-10">
             Unlock your potential with GES, the leading headhunting firm
             dedicated to connecting you with opportunities that propel you
-            towards unparalleled success.
-          </p>
+            towards unparalleled success
+          </span>
         </div>
         <div className="flex space-x-24">
           <div>

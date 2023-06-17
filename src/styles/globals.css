@@ -8,3 +8,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.waves-bg {
+  background-image: url("/assets/wave1.svg");
+}
+
+.waves-bg-2 {
+  background-image: url("/assets/wave2.svg");
+}
