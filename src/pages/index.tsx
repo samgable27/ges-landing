@@ -30,7 +30,7 @@ export default function Home() {
         <Recruitment />
         <Reviews />
         <Contact />
-        <div className="waves-bg-2 bg-no-repeat bg-cover bg-right h-[700px] -z-1 object-cover"></div>
+        <div className="waves-bg-2 bg-no-repeat bg-cover bg-right h-[700px] object-cover"></div>
         <Footer />
       </main>
     </>
