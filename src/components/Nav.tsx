@@ -20,7 +20,7 @@ const Nav: React.FC<NavProps> = () => {
     },
   });
   return (
-    <header className="bg-[#144aa1] rounded-b-[20rem]">
+    <header className="bg-[#144aa1] rounded-b-[25rem]">
       <div className="px-24 py-12 ">
         <div className="flex items-center justify-between text-white max-w-[1800px]">
           <div className="flex items-center font-lato font-extraBold text-2xl space-x-2">
@@ -81,7 +81,7 @@ const Nav: React.FC<NavProps> = () => {
           </div>
         </div>
       </div>
-      <div className="waves-bg bg-no-repeat bg-cover bg-center h-[300px] rounded-b-lg object-cover"></div>
+      <div className="waves-bg bg-no-repeat bg-cover bg-top h-[400px] rounded-b-full"></div>
     </header>
   );
 };

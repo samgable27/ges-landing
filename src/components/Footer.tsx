@@ -10,9 +10,10 @@ const Footer = (props: Props) => {
     <div className="waves-bg-2 bg-no-repeat bg-cover bg-bottom h-[1000px]">
       <div className="ml-36 flex flex-col justify-between max-w-[1800px]">
         <div className="flex items-center mt-12 justify-between space-y-5 mr-96 border-gray-100 border-b-2 pb-10 ">
-          <div className="flex flex-col items-start font-lato font-extraBold text-2xl space-x-2">
-            <div className="flex items-start space-x-1">
+          <div className="flex flex-col items-start font-lato font-extraBold text-2xl">
+            <div className="flex items-start">
               <Diversity3Icon
+                className="mr-1"
                 sx={{
                   fontSize: "2rem",
                 }}
