@@ -118,9 +118,8 @@ const Contact = (props: Props) => {
           <h1 className="font-lato font-bold text-2xl text-[#fff] max-w-[2000px]">
             Contact Us
           </h1>
-          <div className="mt-8 ml-1 font-lato font-extraBold text-5xl max-w-lg text-white leading-tight">
-            Any questions? Write or call with a guaranteed response within 12
-            hours
+          <div className="mt-8 ml-1 font-lato font-extraBold text-5xl max-w-xl text-white leading-tight">
+            Questions? Write or call with a guaranteed response within 24 hours
           </div>
           <p className="font-lato font-light text-gray-300 max-w-xl pt-10">
             Unlock your potential with our executive services, the leading
