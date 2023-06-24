@@ -9,7 +9,7 @@ type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <div className="bg-white max-w-[1800px]  flex flex-col items-center justify-around mt-36">
+    <div className="bg-white   flex flex-col items-center justify-around mt-36">
       <div
         data-aos="zoom-in-up"
         data-aos-duration="3000"

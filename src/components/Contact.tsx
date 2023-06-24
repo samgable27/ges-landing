@@ -112,14 +112,13 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <div className=" bg-[#144aa1] rounded-t-[15rem] px-72 py-36">
-      <div className="flex items-start justify-between max-w-[1620px]">
+    <div className=" bg-[#144aa1] rounded-t-[15rem] py-36">
+      <div className="flex items-center justify-center ">
         <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          className="flex flex-col"
+        // data-aos="fade-right"
+        // data-aos-duration="2000"
+        // data-aos-offset="200"
+        // data-aos-easing="ease-in-sine"
         >
           <h1 className="font-lato font-bold text-2xl text-[#fff] max-w-[2000px]">
             Contact Us
@@ -151,11 +150,10 @@ const Contact = (props: Props) => {
           </div>
         </div>
         <div
-          // data-aos="fade-left"
-          // data-aos-duration="2000"
-          // data-aos-offset="200"
-          // data-aos-easing="ease-in-sine"
-          className=""
+        // data-aos="fade-left"
+        // data-aos-duration="2000"
+        // data-aos-offset="200"
+        // data-aos-easing="ease-in-sine"
         >
           <ThemeProvider theme={customTheme(outerTheme)}>
             <Box

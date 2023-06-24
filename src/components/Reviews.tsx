@@ -9,7 +9,7 @@ const Reviews = (props: Props) => {
       // data-aos="zoom-in-down"
       // data-aos-offset="500"
       // data-aos-duration="1500"
-      className="mt-36 ml-36 mb-36 space-y-12"
+      className="mt-36 mb-36 space-y-12 flex flex-col items-center justify-center"
     >
       <div className="max-w-[1550px]">
         <h1 className="mb-24 font-lato font-bold text-[64px] text-center">
