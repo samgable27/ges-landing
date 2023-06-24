@@ -1,8 +1,9 @@
 import Image from "next/image";
-import React, { SVGProps } from "react";
+import React, { SVGProps, useEffect } from "react";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import { Button, createTheme, ThemeProvider, Box } from "@mui/material";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 interface NavProps {
   text: string;
   Icon: IconComponentType;
@@ -19,10 +20,23 @@ const Nav: React.FC<NavProps> = () => {
       },
     },
   });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init();
+    }
+  }, []);
+
   return (
     <header className="bg-[#144aa1] rounded-b-[25rem]">
       <div className="px-24 py-12 ">
-        <div className="flex items-center justify-between text-white max-w-[1800px]">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          className="flex items-center justify-between text-white max-w-[1800px]"
+        >
           <div className="flex items-center font-lato font-extraBold text-2xl space-x-2">
             <Diversity3Icon
               sx={{
@@ -51,7 +65,13 @@ const Nav: React.FC<NavProps> = () => {
           </div>
         </div>
 
-        <div className="flex mt-36">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="flex mt-36"
+        >
           <div className="flex flex-col max-w-2xl">
             <h1 className="text-white font-lato pb-3 font-bold text-[64px]">
               We will handle the recruitment process for you

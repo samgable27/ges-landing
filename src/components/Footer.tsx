@@ -8,7 +8,13 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className="waves-bg-2 bg-no-repeat bg-cover bg-bottom h-[700px]">
-      <div className="ml-36 flex flex-col justify-between max-w-[1800px]">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        data-aos-offset="200"
+        className="ml-36 flex flex-col justify-between max-w-[1800px]"
+      >
         <div className="flex items-center mt-12 justify-between space-y-5 mr-96 border-gray-100 border-b-2 pb-10 ">
           <div className="flex flex-col items-start font-lato font-extraBold text-2xl">
             <div className="flex items-start">

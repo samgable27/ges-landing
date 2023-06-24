@@ -114,7 +114,13 @@ const Contact = (props: Props) => {
   return (
     <div className=" bg-[#144aa1] rounded-t-[15rem] px-36 py-36">
       <div className="flex items-start justify-between max-w-[1600px]">
-        <div className=" flex flex-col">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          className="flex flex-col"
+        >
           <h1 className="font-lato font-bold text-2xl text-[#fff] max-w-[2000px]">
             Contact Us
           </h1>
@@ -144,33 +150,40 @@ const Contact = (props: Props) => {
             </div>
           </div>
         </div>
-        <ThemeProvider theme={customTheme(outerTheme)}>
-          <Box
-            className="mr-64 flex flex-col space-y-12 w-max"
-            component="form"
-            sx={{
-              "& > :not(style)": { m: 1, width: "25rem" },
-            }}
-            noValidate
-            autoComplete="off"
-          >
-            <TextField label="Your Name" variant="filled" />
-            <TextField label="Email" variant="filled" />
-            <TextField label="Subject" variant="filled" />
-            <TextField label="Message" variant="filled" multiline rows={6} />
-            <Space wrap>
-              <Button
-                className="bg-[#15ba99] w-[25rem] h-[3rem]"
-                type="primary"
-                loading={loadings[0]}
-                onClick={() => enterLoading(0)}
-              >
-                <span className="font-lato font-regular text-lg">Send</span>
-                <ArrowForwardIcon className="text-[20px] mb-1 ml-1" />
-              </Button>
-            </Space>
-          </Box>
-        </ThemeProvider>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <ThemeProvider theme={customTheme(outerTheme)}>
+            <Box
+              className="mr-64 flex flex-col space-y-12 w-max"
+              component="form"
+              sx={{
+                "& > :not(style)": { m: 1, width: "25rem" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField label="Your Name" variant="filled" />
+              <TextField label="Email" variant="filled" />
+              <TextField label="Subject" variant="filled" />
+              <TextField label="Message" variant="filled" multiline rows={6} />
+              <Space wrap>
+                <Button
+                  className="bg-[#15ba99] w-[25rem] h-[3rem]"
+                  type="primary"
+                  loading={loadings[0]}
+                  onClick={() => enterLoading(0)}
+                >
+                  <span className="font-lato font-regular text-lg">Send</span>
+                  <ArrowForwardIcon className="text-[20px] mb-1 ml-1" />
+                </Button>
+              </Space>
+            </Box>
+          </ThemeProvider>
+        </div>
       </div>
     </div>
   );

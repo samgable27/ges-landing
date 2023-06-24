@@ -5,7 +5,12 @@ type Props = {};
 
 const Reviews = (props: Props) => {
   return (
-    <div className="mt-36 ml-36 mb-36 space-y-12">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-offset="500"
+      data-aos-duration="1500"
+      className="mt-36 ml-36 mb-36 space-y-12"
+    >
       <div className="max-w-[1550px]">
         <h1 className="mb-24 font-lato font-bold text-[64px] text-center">
           What our clients think about us
