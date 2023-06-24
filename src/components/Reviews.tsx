@@ -16,7 +16,6 @@ const Reviews = (props: Props) => {
           What our clients think about us
         </h1>
       </div>
-      <div></div>
       <div className="flex flex-col items-center justify-center max-w-[1550px]">
         <div className="flex flex-col items-center justify-center">
           <h2 className="mr-2 font-lato font-bold text-xl">Karen W.</h2>

@@ -9,11 +9,11 @@ const Footer = (props: Props) => {
   return (
     <div className="waves-bg-2 bg-no-repeat bg-cover bg-bottom h-[700px]">
       <div
-        // data-aos="fade-up"
-        // data-aos-anchor-placement="top-bottom"
-        // data-aos-duration="3000"
-        // data-aos-offset="200"
-        className="ml-36 flex flex-col justify-between max-w-[1800px]"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        data-aos-offset="200"
+        className="ml-96 flex flex-col justify-between max-w-[1800px]"
       >
         <div className="flex items-center mt-12 justify-between space-y-5 mr-96 border-gray-100 border-b-2 pb-10 ">
           <div className="flex flex-col items-start font-lato font-extraBold text-2xl">
@@ -38,19 +38,19 @@ const Footer = (props: Props) => {
             <div>
               <h1 className="font-lato font-extraBold text-md pb-3">Company</h1>
               <div className="font-lato font-regular text-sm pt-3 space-y-2">
-                <p>Demos</p>
-                <p>About</p>
-                <p>Blog</p>
-                <p>Pages</p>
-                <p>Contact</p>
+                <p className="cursor-not-allowed">Demos</p>
+                <p className="cursor-not-allowed">About</p>
+                <p className="cursor-not-allowed">Blog</p>
+                <p className="cursor-not-allowed">Pages</p>
+                <p className="cursor-not-allowed">Contact</p>
               </div>
             </div>
             <div>
               <h1 className="font-lato font-extraBold text-md pb-3">Help</h1>
               <div className="font-lato font-regular text-sm pt-3 space-y-2">
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy</p>
-                <p>Customer Support</p>
+                <p className="cursor-not-allowed">Terms & Conditions</p>
+                <p className="cursor-not-allowed">Privacy Policy</p>
+                <p className="cursor-not-allowed">Customer Support</p>
               </div>
             </div>
             <div>
@@ -58,9 +58,9 @@ const Footer = (props: Props) => {
                 Resources
               </h1>
               <div className="font-lato font-regular text-sm pt-3 space-y-2">
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy</p>
-                <p>Contact Us</p>
+                <p className="cursor-not-allowed">Terms & Conditions</p>
+                <p className="cursor-not-allowed">Privacy Policy</p>
+                <p className="cursor-not-allowed">Contact Us</p>
               </div>
             </div>
           </div>

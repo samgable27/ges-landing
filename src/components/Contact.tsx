@@ -112,8 +112,8 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <div className=" bg-[#144aa1] rounded-t-[15rem] px-36 py-36">
-      <div className="flex items-start justify-between max-w-[1600px]">
+    <div className=" bg-[#144aa1] rounded-t-[15rem] px-72 py-36">
+      <div className="flex items-start justify-between max-w-[1620px]">
         <div
           data-aos="fade-right"
           data-aos-duration="2000"
@@ -151,14 +151,15 @@ const Contact = (props: Props) => {
           </div>
         </div>
         <div
-          data-aos="fade-left"
-          data-aos-duration="2000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
+          // data-aos="fade-left"
+          // data-aos-duration="2000"
+          // data-aos-offset="200"
+          // data-aos-easing="ease-in-sine"
+          className=""
         >
           <ThemeProvider theme={customTheme(outerTheme)}>
             <Box
-              className="mr-64 flex flex-col space-y-12 w-max"
+              className="flex flex-col space-y-12"
               component="form"
               sx={{
                 "& > :not(style)": { m: 1, width: "25rem" },
