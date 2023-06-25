@@ -6,9 +6,9 @@ type Props = {};
 const Recruitment = (props: Props) => {
   return (
     <div
-      // data-aos="zoom-out-left"
-      // data-aos-offset="500"
-      // data-aos-duration="3000"
+      data-aos="zoom-out-left"
+      data-aos-offset="500"
+      data-aos-duration="3000"
       className="mt-36 flex flex-col items-center justify-center"
     >
       <div className="max-w-3xl text-left mb-12">

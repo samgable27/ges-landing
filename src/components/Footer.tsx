@@ -9,10 +9,10 @@ const Footer = (props: Props) => {
   return (
     <div className="waves-bg-2 bg-no-repeat bg-cover bg-bottom h-[700px]">
       <div
-        // data-aos="fade-up"
-        // data-aos-anchor-placement="top-bottom"
-        // data-aos-duration="3000"
-        // data-aos-offset="200"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        data-aos-offset="200"
         className="flex flex-col items-center justify-between"
       >
         <div className="flex items-center mt-12 justify-between space-y-5  border-gray-100 border-b-2 pb-10 ">
@@ -65,7 +65,7 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-end justify-between mb-12 ">
+        <div className="flex items-end mb-12">
           <div className="flex font-lato font-regular space-x-12 pt-10 ml-7 text-md">
             <div className="flex items-center space-x-1">
               <LocalPhoneIcon
@@ -83,9 +83,9 @@ const Footer = (props: Props) => {
               />
               <span>info@ges.com</span>
             </div>
-          </div>
-          <div className="font-lato font-light text-gray-500">
-            &copy; 2023 GableExecutiveSearch, All Rights Reserved
+            <div className="font-lato font-light text-gray-500">
+              &copy; 2023 GableExecutiveSearch, All Rights Reserved
+            </div>
           </div>
         </div>
       </div>

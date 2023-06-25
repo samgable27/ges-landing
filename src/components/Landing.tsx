@@ -11,7 +11,7 @@ interface NavProps {
 
 type IconComponentType = (props: SVGProps<SVGSVGElement>) => JSX.Element;
 
-const Nav: React.FC<NavProps> = () => {
+const Landing: React.FC<NavProps> = () => {
   const theme = createTheme({
     palette: {
       primary: {
@@ -29,42 +29,7 @@ const Nav: React.FC<NavProps> = () => {
 
   return (
     <header className="bg-[#144aa1] rounded-b-[25rem]">
-      <div className="pb-32 py-12 flex flex-col items-center">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          className="flex items-center justify-around text-white"
-        >
-          <div className="flex items-center font-lato font-extraBold text-2xl space-x-2">
-            <Diversity3Icon
-              sx={{
-                fontSize: "2rem",
-              }}
-            />
-            <div>
-              Gable
-              <span className="font-lato font-regular">ExecutiveSearch</span>
-            </div>
-          </div>
-
-          <div className="flex flex-grow justify-between items-center">
-            <li className="cursor-pointer list-none space-x-8 font-lato font-light text-gray-300 text-md">
-              <a>Demos</a>
-              <a>About</a>
-              <a>Blog</a>
-              <a>Press</a>
-              <a>Contact</a>
-            </li>
-            <ThemeProvider theme={theme}>
-              <Button size="large" variant="contained" color="primary">
-                <span className="font-lato font-extraBold">Consultation</span>
-              </Button>
-            </ThemeProvider>
-          </div>
-        </div>
-
+      <div className="flex justify-center ">
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
@@ -72,15 +37,15 @@ const Nav: React.FC<NavProps> = () => {
           data-aos-easing="ease-in-sine"
           className="flex items-center justify-center mt-36"
         >
-          <div className="max-w-2xl">
-            <h1 className="text-white font-lato pb-3 font-bold text-[64px]">
+          <div className="max-w-3xl">
+            <h1 className="text-white font-lato pb-12 font-bold text-8xl">
               We will handle the recruitment process for you
             </h1>
-            <p className="text-gray-300 text-2xl font-lato font-regular ">
+            <p className="text-gray-300 text-2xl font-lato font-regular max-w-lg">
               All the while ensuring the hiring process is simple, efficient,
               and with full transparency.
             </p>
-            <Box sx={{ "& button": { marginTop: 5 } }}>
+            <Box sx={{ "& button": { marginTop: 6 } }}>
               <ThemeProvider theme={theme}>
                 <Button size="large" variant="contained">
                   <span className="font-lato font-extraBold">
@@ -94,8 +59,8 @@ const Nav: React.FC<NavProps> = () => {
             <Image
               className="min-w-[600px] object-contain"
               src="./assets/undraw_shared_goals_re_jvqd.svg"
-              height={600}
-              width={600}
+              height={700}
+              width={700}
               alt={""}
             />
           </div>
@@ -106,4 +71,4 @@ const Nav: React.FC<NavProps> = () => {
   );
 };
 
-export default Nav;
+export default Landing;

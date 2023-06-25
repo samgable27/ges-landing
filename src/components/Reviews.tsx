@@ -6,9 +6,9 @@ type Props = {};
 const Reviews = (props: Props) => {
   return (
     <div
-      // data-aos="zoom-in-down"
-      // data-aos-offset="500"
-      // data-aos-duration="1500"
+      data-aos="zoom-in-down"
+      data-aos-offset="500"
+      data-aos-duration="1500"
       className="mt-36 mb-36 space-y-12 flex flex-col items-center justify-center"
     >
       <div className="max-w-[1550px]">

@@ -1,12 +1,13 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import Nav from "@/components/Nav";
 import { SVGProps } from "react";
 import Features from "@/components/Features";
 import Recruitment from "@/components/Recruitment";
 import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Landing from "@/components/Landing";
+import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Nav
+        <NavBar />
+        <Landing
           text={""}
           Icon={function (props: SVGProps<SVGSVGElement>): JSX.Element {
             throw new Error("Function not implemented.");
