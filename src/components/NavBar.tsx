@@ -20,9 +20,9 @@ const NavBar = (props: Props) => {
         data-aos-duration="2000"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
-        className="text-white flex items-center justify-around pt-7"
+        className="text-white flex items-center justify-around pt-7 w-full"
       >
-        <div className="flex items-center font-lato font-extraBold text-2xl space-x-2">
+        <div className="flex items-center font-lato font-extraBold text-2xl space-x-2 cursor-pointer">
           <Diversity3Icon
             sx={{
               fontSize: "2rem",
@@ -34,12 +34,12 @@ const NavBar = (props: Props) => {
           </div>
         </div>
 
-        <li className="cursor-pointer list-none space-x-8 font-lato font-light text-gray-300 text-md">
-          <a>Demos</a>
-          <a>About</a>
-          <a>Blog</a>
-          <a>Press</a>
-          <a>Contact</a>
+        <li className="list-none space-x-8 font-lato font-light text-gray-300 text-md">
+          <a className="cursor-not-allowed">Demos</a>
+          <a className="cursor-not-allowed">About</a>
+          <a className="cursor-not-allowed">Blog</a>
+          <a className="cursor-not-allowed">Press</a>
+          <a className="cursor-not-allowed">Contact</a>
         </li>
         <ThemeProvider theme={theme}>
           <Button size="large" variant="contained" color="primary">

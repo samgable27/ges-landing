@@ -9,13 +9,13 @@ const Footer = (props: Props) => {
   return (
     <div className="waves-bg-2 bg-no-repeat bg-cover bg-bottom h-[700px]">
       <div
-        data-aos="fade-up"
+        data-aos="fade-down"
         data-aos-anchor-placement="top-bottom"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         data-aos-offset="200"
-        className="flex flex-col items-center justify-between"
+        className="flex flex-col divide-y-2 px-20"
       >
-        <div className="flex items-center mt-12 justify-between space-y-5  border-gray-100 border-b-2 pb-10 ">
+        <div className="flex items-center mt-12 justify-around space-y-5   pb-10 ">
           <div className="flex flex-col items-start font-lato font-extraBold text-2xl">
             <div className="flex items-start">
               <Diversity3Icon
@@ -65,12 +65,12 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-end mb-12">
-          <div className="flex font-lato font-regular space-x-12 pt-10 ml-7 text-md">
+        <div className="flex items-center justify-around font-lato font-regular pt-10 text-md">
+          <div className="flex font-lato font-regular  space-x-8 ">
             <div className="flex items-center space-x-1">
               <LocalPhoneIcon
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                 }}
               />
               <span>+ 1 342 332 338</span>
@@ -78,14 +78,14 @@ const Footer = (props: Props) => {
             <div className="flex items-center space-x-1">
               <EmailOutlinedIcon
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                 }}
               />
               <span>info@ges.com</span>
             </div>
-            <div className="font-lato font-light text-gray-500">
-              &copy; 2023 GableExecutiveSearch, All Rights Reserved
-            </div>
+          </div>
+          <div className="font-lato font-light text-gray-500">
+            &copy; 2023 GableExecutiveSearch, All Rights Reserved
           </div>
         </div>
       </div>

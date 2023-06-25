@@ -115,7 +115,7 @@ const Contact = (props: Props) => {
     <div className=" bg-[#144aa1] rounded-t-[15rem] py-36">
       <div className="flex items-center justify-around ">
         <div
-          data-aos="fade-right"
+          data-aos="fade-up-right"
           data-aos-duration="2000"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
@@ -150,7 +150,7 @@ const Contact = (props: Props) => {
           </div>
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up-left"
           data-aos-duration="2000"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
