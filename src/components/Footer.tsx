@@ -17,7 +17,7 @@ const Footer = (props: Props) => {
       >
         <div className="flex items-center mt-12 justify-around space-y-5   pb-10 ">
           <div className="flex flex-col items-start font-lato font-extraBold text-2xl">
-            <div className="flex items-start">
+            <div className="flex items-center">
               <Diversity3Icon
                 className="mr-1"
                 sx={{
@@ -40,9 +40,7 @@ const Footer = (props: Props) => {
               <div className="font-lato font-regular text-sm pt-3 space-y-2">
                 <p className="cursor-not-allowed">Demos</p>
                 <p className="cursor-not-allowed">About</p>
-                <p className="cursor-not-allowed">Blog</p>
-                <p className="cursor-not-allowed">Pages</p>
-                <p className="cursor-not-allowed">Contact</p>
+                <p className="cursor-not-allowed">Customer Support</p>
               </div>
             </div>
             <div>
